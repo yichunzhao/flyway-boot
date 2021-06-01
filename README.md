@@ -28,7 +28,7 @@ at the classpath:db/migration
 
 Flyway adheres to the following naming convention for migration scripts:
 
-<Prefix><Version>__<Description>.sql
+\<Prefix>\<Version>__\<Description>.sql
 
 Where:
 
