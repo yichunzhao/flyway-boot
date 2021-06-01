@@ -12,6 +12,7 @@ Flyway maven plugin version has been defined in the POM pararent, i.e. Spring bo
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <configuration>
+                    <url>jdbc:postgresql://localhost:5435/flywayboot</url>
                     <user>postgres</user>
                     <password>test</password>
                     <schemas>
