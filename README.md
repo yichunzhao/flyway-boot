@@ -32,13 +32,39 @@ Flyway adheres to the following naming convention for migration scripts:
 
 Where:
 
-\<Prefix>:  *Default prefix is **V***, which may be configured in the flyway configuration file using the flyway.sqlMigrationPrefix property.
+\<Prefix\>:  *Default prefix is **V***, which may be configured in the flyway configuration file using the flyway.sqlMigrationPrefix property.
             
-\<Version>:  Migration version number. Major and minor versions may be separated by an underscore. *The migration version should always start with 1*.
+\<Version\>:  Migration version number. Major and minor versions may be separated by an underscore. *The migration version should always start with 1*.
             
-\<Description>:  *Textual description of the migration*. The description needs to be separated from the version numbers with *a double underscore*.
+\<Description\>:  *Textual description of the migration*. The description needs to be separated from the version numbers with *a double underscore*.
             
 Example: V1_1_0__my_first_migration.sql
 
+After running application, a flyway migration history table is created
+            
+![image](https://user-images.githubusercontent.com/17804600/120349148-25683480-c2fe-11eb-9412-00b9d5e8f524.png)
+            
+**First migration**
+
+run flyway maven plugin : flyway:migrate
+            
+![image](https://user-images.githubusercontent.com/17804600/120356095-45025b80-c304-11eb-9e3f-792735312913.png)
+            
+database mirgration table updated, and new table created
+            
+![image](https://user-images.githubusercontent.com/17804600/120356298-79761780-c304-11eb-843b-e51ecf1a5f6c.png)
+            
+
+**Second migration**
+            
+Create V2_0__createdepartment.sql, where creating new table Department and alter existing Employee table.
+            
+![image](https://user-images.githubusercontent.com/17804600/120360708-5732c880-c309-11eb-9278-a91540c43379.png)
+            
+            
+            
+            
+            
+            
             
             
