@@ -21,3 +21,18 @@ Flyway maven plugin version has been defined in the POM pararent, i.e. Spring bo
                 </configuration>
             </plugin>
 ````
+
+Create migration script
+
+Flyway adheres to the following naming convention for migration scripts:
+
+<Prefix><Version>__<Description>.sql
+
+Where:
+
+<Prefix> : *Default prefix is V*, which may be configured in the flyway configuration file using the flyway.sqlMigrationPrefix property.
+            
+<Version> : Migration version number. Major and minor versions may be separated by an underscore. *The migration version should always start with 1*.
+            
+<Description> : *Textual description of the migration*. The description needs to be separated from the version numbers with *a double underscore*.
+            
