@@ -61,6 +61,10 @@ Create V2_0__createdepartment.sql, where creating new table Department and alter
             
 ![image](https://user-images.githubusercontent.com/17804600/120360708-5732c880-c309-11eb-9278-a91540c43379.png)
 
+flyway version history            
+
+![image](https://user-images.githubusercontent.com/17804600/120363436-70894400-c30c-11eb-864d-f0ffca10165a.png)
+            
             
 **Disable flyway**
             
