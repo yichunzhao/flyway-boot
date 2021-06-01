@@ -54,6 +54,14 @@ database mirgration table updated, and new table created
             
 ![image](https://user-images.githubusercontent.com/17804600/120356298-79761780-c304-11eb-843b-e51ecf1a5f6c.png)
             
+
+**Second migration**
+            
+Create V2_0__createdepartment.sql, where creating new table Department and alter existing Employee table.
+            
+![image](https://user-images.githubusercontent.com/17804600/120360708-5732c880-c309-11eb-9278-a91540c43379.png)
+            
+            
             
             
             
