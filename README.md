@@ -40,5 +40,8 @@ Where:
             
 Example: V1_1_0__my_first_migration.sql
 
+After running application, a flyway migration history table is created
+            
+![image](https://user-images.githubusercontent.com/17804600/120349148-25683480-c2fe-11eb-9412-00b9d5e8f524.png)
             
             
