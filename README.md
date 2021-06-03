@@ -83,4 +83,14 @@ Maven plugin goals:
 * Validate: Validates current database schema against available migrations.
 * Repair: Repairs metadata table.
 * Clean: Drops all objects in a configured schema. All database objects are dropped. **Of course, you should never use clean on any production database.**            
-            
+
+**Stop automatic migration** 
+
+By default the migration happens automatically; You may change it into manual way by adding a bean
+
+````
+@Bean
+public FlywayMigrationStrategy flywayMigrationStrategy(){
+return args->();
+}
+````            
