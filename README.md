@@ -94,3 +94,13 @@ public FlywayMigrationStrategy flywayMigrationStrategy(){
 return args->();
 }
 ````            
+
+**Run PgAdmin Container**
+
+````
+docker pull dpage/pgadmin4
+
+docker run --name pgAdmin4 -p 81:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' -e 'PGADMIN_DEFAULT_PASSWORD=test' -d dpage/pgadmin4
+````
+[env. var](https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html) 
+
